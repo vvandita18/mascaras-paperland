@@ -16,23 +16,6 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
 
-        <!-- Facebook Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '630951204121168');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=630951204121168&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Facebook Pixel Code -->
   
     </head>
     <body id="page-top">
@@ -60,7 +43,7 @@
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Comprar</a>
             </div>
         </header>
-        <!-- Fotos de personas-->
+        <!-- Fotos de personas usando la máscara-->
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
@@ -85,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <!-- Fotos del producto-->
+        <!-- Fotos del detalle del producto-->
         <section class="page-section" id="detalles">
             <div class="container">
                 <div class="text-center">
@@ -111,12 +94,13 @@
                 </div>
             </div>
         </section>
-        <!-- About-->
+        <!-- Comprar-->
         <section class="page-section" id="comprar">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Comprar</h2>
                     <h3 class="section-subheading text-muted">Somos fabricantes directos. <br> Consultá precio mayorista. <br> Pagalo a través de Mercado Pago en 12 cuotas sin interés. <br>  Más de 15 años de trayectoria e innovación</h3>
+                    <a mp-mode="dftl" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=1749388-9d31bc17-582b-41cc-8dc6-28e2c6fcb907" name="MP-payButton" class='blue-ar-l-rn-aron'>Pagar con Mercado Pago</a>
                 </div>
                 <div class="card-title uno">
                     <div class="card" style="width: 18rem;">
@@ -307,6 +291,7 @@
                 </div>
             </div>
         </footer>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
@@ -317,5 +302,9 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <script type="text/javascript">
+        (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
+        </script>
     </body>
 </html>
